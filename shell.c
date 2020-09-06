@@ -285,11 +285,11 @@ void loop(){
     while (1){
         //gets the login, host and current directory to display in the terminal
         
-        //char *login_n = get_login_name();
+        char *login_n = get_login_name();
         char *host_n = get_host_name();
         char *cur_dir = get_cwd();
-        //printf("%s@%s:%s$ ", login_n, host_n, cur_dir);
-        printf("%s:%s$ ", host_n, cur_dir);
+        printf("%s@%s:%s$ ", login_n, host_n, cur_dir);
+        //printf("%s:%s$ ", host_n, cur_dir);
 
 
         //gets the input from the stdin
